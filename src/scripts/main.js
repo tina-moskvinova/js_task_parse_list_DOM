@@ -22,7 +22,7 @@ function getEmployees(list) {
 
   return employeesArray.map((emp) => {
     return {
-      name: emp.textContent,
+      name: emp.textContent.split(',')[0],
       position: emp.getAttribute('data-position'),
       salary: emp.dataset.salary,
       age: emp.dataset.age,
